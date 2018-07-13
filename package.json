@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
+  "engines": {
+    "node": "8.11.1",
+    "npm": "6.1.0"
+  },
   "scripts": {
     "d": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "b": "node build/build.js",
