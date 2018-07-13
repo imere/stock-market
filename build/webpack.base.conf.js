@@ -12,7 +12,7 @@ const resolve = function (dir) {
 
 const assetsPath = function (p) {
   const assetsSub = process.env.NODE_ENV === 'production'
-    ? config.prod.assetsSub
+    ? config.build.assetsSub
     : config.dev.assetsSub
   return path.posix.join(assetsSub, p)
 }
