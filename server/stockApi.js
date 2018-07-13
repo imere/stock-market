@@ -1,9 +1,8 @@
 const router = require('express').Router()
 const axios = require('axios')
-const Stock = require('../src/config/db')
+const Stock = require('../config/db')
 
-const key = process.env.key ||
-            'DsWorJn4dDgR2jAb5WTn'
+const key = process.env.key
 
 const url = 'https://www.quandl.com/api/v3/datasets/WIKI/'
 

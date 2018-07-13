@@ -1,7 +1,6 @@
 const mg = require('mongoose')
 
-const uri = process.env.uri ||
-            'mongodb://imere:838914662imere@ds141720.mlab.com:41720/stock'
+const uri = process.env.uri
 
 mg.connect(uri, { useNewUrlParser: true })
 
