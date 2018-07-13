@@ -1,9 +1,9 @@
 const compression = require('compression')
 const express = require('express')
 const app = express()
-const http = require('http').Server(app)
+const https = require('https').Server(app)
 const WebSocket = require('ws')
-const wss = new WebSocket.Server({ server: http })
+const wss = new WebSocket.Server({ server: https })
 const bodyParser = require('body-parser')
 const path = require('path')
 
@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, '../dist/')))
 const stockApi = require('./stockApi')
 app.use('/', stockApi)
 
-http.listen(port, () => {
+https.listen(port, () => {
   console.log(`Listening on ${ port }`)
 })
 

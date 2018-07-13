@@ -32,7 +32,7 @@ export default {
   methods: {
     establish () {
       try {
-        this.ws = new WebSocket('ws://' + window.location.host)
+        this.ws = new WebSocket('wss://' + window.location.host)
       } catch (ex) {
         return alert(`Your browser dosen't support WebSocket`)
       }
