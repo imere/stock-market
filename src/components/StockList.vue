@@ -32,7 +32,6 @@
 <script>
 export default {
   name: 'StockList',
-  props: ['chart'],
   methods: {
     delStock (code) {
       this.$root.$emit('delStock', code)
