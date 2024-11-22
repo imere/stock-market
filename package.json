@@ -63,7 +63,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.16.3",
+    "express": "^4.21.1",
     "mongoose": "^5.7.5",
     "highcharts": "^9.0.0",
     "vue": "^3.0.0",
